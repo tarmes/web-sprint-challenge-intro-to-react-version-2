@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+It allows us to build components that are reusable other places in the project. We can build a page that changes the DOM when the state changes.
+
 1. Describe component state.
+
+It is used to store a piece of information about the component that can change.
 
 1. Describe props.
 
+Data that gets passed downward from components to other components. Properties.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Something like a network request that affects something outside of the function being executed. There is an argument you can pass at the end of the effect.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

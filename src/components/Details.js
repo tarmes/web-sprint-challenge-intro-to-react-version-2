@@ -3,11 +3,17 @@ import axios from 'axios'
 import { BASE_URL } from '../constants'
 import styled from 'styled-components'
 
+
 const StyledDetails = styled.div`
     background-color: lightgrey;
-    font-size: 2.5em;
+    font-size: 2em;
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 15%;
+
+    transition: all .5s ease-in-out;
+    &:hover {
+        transition: all .5s ease-in-out;
+        transform: scale(1.15);
 `
 
 
