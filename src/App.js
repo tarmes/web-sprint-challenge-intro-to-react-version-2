@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { BASE_URL } from './constants';
 import Character from './components/Character'
+import Details from './components/Details'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -40,12 +41,12 @@ const App = () => {
       <h1 className="Header">Characters</h1>
       {
         characters.map(cha => {
-          return <Character charData={cha} key={cha.name} action={setCurrentCharacterId} />
+          return <Character charData={cha} key={cha.id} action={openDetails} />
         })
       }
-      {/* {
-        currentCharacterId
-      } */}
+      {
+        currentCharacterId && <Details friendId={currentCharacterId} close={closeDetails}/>
+      }
     </div>
   );
 }
