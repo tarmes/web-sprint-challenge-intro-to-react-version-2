@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../constants'
+import styled from 'styled-components'
+
+const StyledDetails = styled.div`
+    background-color: lightgrey;
+    font-size: 2.5em;
+    border: 2px solid black;
+    border-radius: 10%;
+`
+
+
 
 export default function Details({ friendId, close}) {
 
@@ -18,7 +28,7 @@ export default function Details({ friendId, close}) {
     }, [friendId])
 
     return (
-        <div className='details-container'>
+        <StyledDetails className='details-container'>
             <h2>Details</h2>
             {
                 details && 
@@ -33,6 +43,6 @@ export default function Details({ friendId, close}) {
                 </>
             }
             <button onClick={close}>Close</button>
-        </div>
+        </StyledDetails>
     )
 }

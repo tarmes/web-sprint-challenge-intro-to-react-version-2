@@ -15,7 +15,7 @@ const App = () => {
 
   const [characters, setCharacters] = useState([])
 
-  const [currentCharacterId, setCurrentCharacterId] = useState('1')
+  const [currentCharacterId, setCurrentCharacterId] = useState(null)
 
   const openDetails = id => {
     setCurrentCharacterId(id)
