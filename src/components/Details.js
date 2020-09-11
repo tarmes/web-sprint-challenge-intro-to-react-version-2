@@ -14,6 +14,7 @@ const StyledDetails = styled.div`
     &:hover {
         transition: all .5s ease-in-out;
         transform: scale(1.15);
+    }
 `
 
 
